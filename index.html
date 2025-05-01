@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Cold Hot webpage">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Zoey Kariyal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Celsius Temperature Checker</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <div class="container">
+      <center><h1>Temperature Checker</h1></center>
+      <img src="./images/thermometer.avif" alt="temperature" width="20%" height="auto"/>
+      <h3>Enter the temperature in Celsius below</h3>
+
+      <form method="post" action="../server/temperature-check.php">
+        <input type="number" name="celsius" id="celsiusInput" required>
+        <button type="submit">Check</button>
+      </form>
+    </div>
   </body>
 </html>
